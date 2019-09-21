@@ -489,22 +489,28 @@ and (max-width: 1024px)
 {
   .info-header
   {
-    font-size: 48px !important;
+    font-size: 36px !important;
+  }
+
+  .info-header-icon
+  {
+    margin-right: 12px;
+    width: 40px !important;
   }
 
   #about
   {
-    font-size: 34px !important;
+    font-size: 28px !important;
   }
 
   #about h2
   {
-    font-size: 48px;
+    font-size: 48px !important;
   }
 
   #skills
   {
-    font-size: 24px !important;
+    font-size: 18px !important;
     margin-top: 24px;
     padding-top: 92px !important;
     padding-right: 275px;
@@ -514,13 +520,13 @@ and (max-width: 1024px)
 
   #skills .skill-list-header
   {
-    font-size: 30px !important;
+    font-size: 25px !important;
   }
 
   #skills .skill-list-icon
   {
-    width: 34px !important;
-    margin-right: 12px;
+    width: 27px !important;
+    margin-right: 8px;
   }
 
   #works .card
