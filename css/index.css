@@ -133,7 +133,7 @@ hr
 {
   font-size: 32px;
   font-weight: 400;
-  height: 48px;
+  min-height: 48px;
 }
 
 .skills-icon
@@ -482,3 +482,130 @@ and (max-width: 1024px)
   }
 }
 /* #endregion */
+
+/* #region Large Screens */
+@media (min-width: 1800px)
+{
+  #about
+  {
+    font-size: 34px !important;
+  }
+
+  #about h2
+  {
+    font-size: 48px;
+  }
+
+  #skills
+  {
+    font-size: 32px !important;
+    margin-top: 24px;
+  }
+
+  .info-header
+  {
+    font-size: 48px !important;
+  }
+
+  #skills .skill-list-header
+  {
+    font-size: 36px !important;
+  }
+
+  #works .card
+  {
+    height: 250px;
+    margin: 12px;
+    font-size: 26px;
+  }
+
+  #works .card-body
+  {
+    padding: 24px 24px 12px 24px;
+    max-height: 250px;
+  }
+
+  #works .card-title
+  {
+    font-size: 32px;
+  }
+
+  #works .card-title img
+  {
+    width: 32px;
+    margin-right: 12px;
+  }
+  
+  #works .card hr
+  {
+    margin: 14px 6px 14px 6px;
+  }
+
+  #works .card-footer
+  {
+    padding: 10px 20px;
+    font-size: 18px;
+    display: flex;
+  }
+  
+  #works .card-footer-color-container
+  {
+    display: flex;
+    align-items: center;
+  }
+  
+  #works .card-footer-color
+  {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    border-radius: 50%;
+  }
+  
+  #works .card-timestamp
+  {
+    width: 100%;
+    text-align: right;
+    font-size: 17px;
+    align-self: center;
+  }
+
+  .card-footer
+  {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .info-nav .nav-link, .main-nav .nav-link
+  {
+    font-size: 28px;
+  }
+
+  .info-nav .nav-separator, .main-nav .nav-separator
+  {
+    font-size: 32px;
+    color: #bbb;
+  }
+  
+  .title
+  {
+    font-size: 120px;
+  }
+  
+  .label
+  {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+  
+  .skills, .skills-icon
+  {
+    font-size: 50px;
+  }
+
+  .link-icon
+  {
+    width: 60px;
+  }
+}
