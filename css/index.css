@@ -293,6 +293,7 @@ hr
   height: 154px;
   margin: 8px;
   font-size: 14px;
+  overflow: hidden;
 }
 
 #works .card-body
@@ -486,6 +487,11 @@ and (max-width: 1024px)
 /* #region Large Screens */
 @media (min-width: 1800px)
 {
+  .info-header
+  {
+    font-size: 48px !important;
+  }
+
   #about
   {
     font-size: 34px !important;
@@ -498,23 +504,22 @@ and (max-width: 1024px)
 
   #skills
   {
-    font-size: 28px !important;
+    font-size: 24px !important;
     margin-top: 24px;
-  }
-
-  .info-header
-  {
-    font-size: 48px !important;
+    padding-top: 92px !important;
+    padding-right: 275px;
+    padding-bottom: 48px;
+    padding-left: 275px;
   }
 
   #skills .skill-list-header
   {
-    font-size: 32px !important;
+    font-size: 30px !important;
   }
 
   #skills .skill-list-icon
   {
-    width: 36px !important;
+    width: 34px !important;
     margin-right: 12px;
   }
 
@@ -607,7 +612,7 @@ and (max-width: 1024px)
   
   .skills, .skills-icon
   {
-    font-size: 50px;
+    font-size: 48px;
   }
 
   .link-icon
