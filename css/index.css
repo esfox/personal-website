@@ -299,7 +299,7 @@ hr
 {
   padding: 20px 20px 8px 20px;
   max-height: 129px;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 #works .card-title
@@ -498,7 +498,7 @@ and (max-width: 1024px)
 
   #skills
   {
-    font-size: 32px !important;
+    font-size: 28px !important;
     margin-top: 24px;
   }
 
@@ -509,30 +509,36 @@ and (max-width: 1024px)
 
   #skills .skill-list-header
   {
-    font-size: 36px !important;
+    font-size: 32px !important;
+  }
+
+  #skills .skill-list-icon
+  {
+    width: 36px !important;
+    margin-right: 12px;
   }
 
   #works .card
   {
-    height: 250px;
+    height: 220px;
     margin: 12px;
-    font-size: 26px;
+    font-size: 24px;
   }
 
   #works .card-body
   {
     padding: 24px 24px 12px 24px;
-    max-height: 250px;
+    max-height: 220px;
   }
 
   #works .card-title
   {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   #works .card-title img
   {
-    width: 32px;
+    width: 28px;
     margin-right: 12px;
   }
   
@@ -556,8 +562,8 @@ and (max-width: 1024px)
   
   #works .card-footer-color
   {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
     margin-right: 12px;
     border-radius: 50%;
   }
@@ -566,7 +572,7 @@ and (max-width: 1024px)
   {
     width: 100%;
     text-align: right;
-    font-size: 17px;
+    font-size: 16px;
     align-self: center;
   }
 
