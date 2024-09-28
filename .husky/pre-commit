@@ -1,0 +1,2 @@
+deno run --allow-read --allow-run --allow-env npm:lint-staged
+deno task spellcheck

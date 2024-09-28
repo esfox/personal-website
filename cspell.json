@@ -1,0 +1,22 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": ["ckftm", "charles", "sabarillo", "nuxt", "astro", "supabase", "mypic", "fontawesome"],
+  "ignorePaths": [
+    "./cspell.json",
+    "./node_modules",
+    "./svelte-kit",
+    "./static",
+    "./deno.lock",
+    "./package.json",
+    ".lintstagedrc",
+    "./dist",
+    "./public",
+    "./.husky",
+    "./.prettierrc",
+    "./.prettierignore",
+    "./.eslintrc.cjs",
+    "./.eslintignore",
+    "./.eslintcache"
+  ]
+}
