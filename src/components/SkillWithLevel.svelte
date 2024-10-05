@@ -37,7 +37,7 @@
 
     .level-meter {
       display: flex;
-      gap: 2px;
+      gap: 3px;
       margin-bottom: var(--margin-bottom);
 
       .bar {
