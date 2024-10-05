@@ -10,7 +10,8 @@
     "supabase",
     "mypic",
     "fontawesome",
-    "alacritty"
+    "alacritty",
+    "esfox"
   ],
   "ignorePaths": [
     "./cspell.json",

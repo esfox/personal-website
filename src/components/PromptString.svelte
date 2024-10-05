@@ -3,7 +3,7 @@
   <div class="top-prefix">
     <span class="left-curve">╭</span>
     <span class="emoji">🖥</span>
-    <span class="path">~/ckftm/github/io</span>
+    <span class="path">~/esfox/github/io</span>
   </div>
   <div class="bottom-prefix">
     <span class="left-curve">╰$</span>
