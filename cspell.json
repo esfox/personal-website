@@ -12,6 +12,7 @@
     ".lintstagedrc",
     "./dist",
     "./public",
+    "./.gitignore",
     "./.husky",
     "./.prettierrc",
     "./.prettierignore",

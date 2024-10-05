@@ -1,13 +1,13 @@
 <script>
   import PromptString from '../components/PromptString.svelte';
-  import LevelMeter from '../components/LevelMeter.svelte';
   import { differenceInYears } from 'date-fns';
+  import SkillWithLevel from '../components/SkillWithLevel.svelte';
 
   const now = new Date();
   const industryStartDate = new Date(2019, 0);
   const industryYearsCount = differenceInYears(now, industryStartDate);
 
-  const langIconSize = 42;
+  const langIconSize = 36;
 </script>
 
 <svelte:head>
@@ -21,17 +21,19 @@
     <h2>I'm Charles Sabarillo</h2>
     <h3>A Full-Stack Software Engineer 🧑‍💻</h3>
   </div>
-  <img src="mypic.png" alt="portrait of Charles" width="120" height="120" class="mypic" />
-  <div class="links">
-    <a href="https://www.linkedin.com/in/ckftm">
-      <i class="fab fa-linkedin"></i>LinkedIn
-    </a>
-    <a href="https://github.com/esfox">
-      <i class="fab fa-github"></i>GitHub
-    </a>
-    <a href="mailto:sabarillo.charles@gmail.com">
-      <i class="fa fa-envelope"></i>Email
-    </a>
+  <div class="pic-and-links">
+    <img src="mypic.png" alt="portrait of Charles" width="120" height="120" class="mypic" />
+    <div class="links">
+      <a href="https://www.linkedin.com/in/ckftm">
+        <i class="fab fa-linkedin"></i>LinkedIn
+      </a>
+      <a href="https://github.com/esfox">
+        <i class="fab fa-github"></i>GitHub
+      </a>
+      <a href="mailto:sabarillo.charles@gmail.com">
+        <i class="fa fa-envelope"></i>Email
+      </a>
+    </div>
   </div>
 </div>
 <PromptString />
@@ -47,68 +49,64 @@
   <h3>What I Code In</h3>
   <small>(And my experience level for each)</small>
   <div class="langs" style={`--icon-size: ${langIconSize}px`}>
-    <div>
-      <LevelMeter level={10} />
-      <img src="typescript.svg" alt="TypeScript" width={langIconSize} />
-      <h4>TypeScript</h4>
-    </div>
-    <div>
-      <LevelMeter level={10} />
-      <img src="javascript.svg" alt="JavaScript" width={langIconSize} />
-      <h4>JavaScript</h4>
-    </div>
-    <div>
-      <LevelMeter level={10} />
-      <img src="html.svg" alt="HTML" width={langIconSize} />
-      <h4>HTML</h4>
-    </div>
-    <div>
-      <LevelMeter level={9} />
-      <img src="css.svg" alt="CSS" width={langIconSize} />
-      <h4>CSS</h4>
-    </div>
-    <div>
-      <LevelMeter level={7} />
-      <img src="csharp.svg" alt="C#" width={langIconSize} />
-      <h4>C#</h4>
-    </div>
-    <div>
-      <LevelMeter level={6} />
-      <img src="php.svg" alt="PHP" width={langIconSize} />
-      <h4>PHP</h4>
-    </div>
-    <div>
-      <LevelMeter level={3} />
-      <img src="python.svg" alt="Python" width={langIconSize} />
-      <h4>Python</h4>
-    </div>
-    <div>
-      <LevelMeter level={5} />
-      <img src="java.svg" alt="Java" width={langIconSize} />
-      <h4>Java</h4>
-    </div>
-    <div>
-      <LevelMeter level={4} />
-      <img src="lua.svg" alt="Lua" width={langIconSize} />
-      <h4>Lua</h4>
-    </div>
-    <div>
-      <LevelMeter level={7} />
-      <i class="fa fa-database" style="font-size: var(--icon-size);"></i>
-      <h4>SQL</h4>
-    </div>
+    <SkillWithLevel skill="TypeScript" level={10}>
+      <img slot="icon" src="typescript.svg" alt="TypeScript" width={langIconSize} />
+    </SkillWithLevel>
+    <SkillWithLevel skill="JavaScript" level={10}>
+      <img slot="icon" src="javascript.svg" alt="JavaScript" width={langIconSize} />
+    </SkillWithLevel>
+    <SkillWithLevel skill="HTML" level={10}>
+      <img slot="icon" src="html.svg" alt="HTML" width={langIconSize} />
+    </SkillWithLevel>
+    <SkillWithLevel skill="CSS" level={9}>
+      <img slot="icon" src="css.svg" alt="CSS" width={langIconSize} />
+    </SkillWithLevel>
+    <SkillWithLevel skill="C#" level={7}>
+      <img slot="icon" src="csharp.svg" alt="C#" width={langIconSize} />
+    </SkillWithLevel>
+    <SkillWithLevel skill="PHP" level={6}>
+      <img slot="icon" src="php.svg" alt="PHP" width={langIconSize} />
+    </SkillWithLevel>
+    <SkillWithLevel skill="Python" level={3}>
+      <img slot="icon" src="python.svg" alt="Python" width={langIconSize} />
+    </SkillWithLevel>
+    <SkillWithLevel skill="Java" level={5}>
+      <img slot="icon" src="java.svg" alt="Java" width={langIconSize} />
+    </SkillWithLevel>
+    <SkillWithLevel skill="Lua" level={4}>
+      <img slot="icon" src="lua.svg" alt="Lua" width={langIconSize} />
+    </SkillWithLevel>
+    <SkillWithLevel skill="SQL" level={7}>
+      <i slot="icon" class="fa fa-database" style="font-size: var(--icon-size);"></i>
+    </SkillWithLevel>
   </div>
 </div>
 
 <style lang="scss">
   .indented {
-    margin-inline-start: 22px;
+    margin-inline-start: 24px;
   }
 
   .hero {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr;
     margin-top: -22px;
+
+    .pic-and-links {
+      display: flex;
+      justify-content: end;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      gap: 24px;
+
+      .pic-and-links {
+        justify-content: center;
+      }
+    }
 
     .mypic {
       border-radius: 12px;
@@ -129,34 +127,8 @@
   }
 
   .langs {
-    display: flex;
-    justify-content: center;
-    gap: 28px;
+    display: grid;
+    gap: 10px;
     margin-top: 24px;
-
-    > div {
-      display: grid;
-      grid-template-rows: 1fr 48px auto;
-      place-content: center;
-
-      :global(.level-meter) {
-        justify-self: center;
-      }
-
-      > img,
-      i {
-        margin-top: 26px;
-      }
-
-      > h4 {
-        margin-top: 16px;
-      }
-
-      > img,
-      i,
-      h4 {
-        place-self: center;
-      }
-    }
   }
 </style>

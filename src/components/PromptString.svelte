@@ -12,11 +12,6 @@
 
 <style lang="scss">
   .prompt-string {
-    --green: #00d75f;
-    --black: #262626;
-    --yellow: #fdbc4b;
-    --blue: #5fd7ff;
-
     font-size: 13px;
     margin-top: 18px;
 
