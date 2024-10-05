@@ -27,7 +27,7 @@
       .emoji {
         display: flex;
         align-items: center;
-        background: var(--black);
+        background: var(--background);
         padding-inline-start: 2px;
 
         &::after {
@@ -35,9 +35,9 @@
           display: block;
           width: 0;
           height: 0;
-          border-top: 9px solid var(--green);
+          border-top: 9.5px solid var(--green);
           border-bottom: 9px solid var(--green);
-          border-inline-start: 9px solid var(--black);
+          border-inline-start: 9px solid var(--background);
           margin-inline-start: 4px;
         }
       }
@@ -55,7 +55,7 @@
           width: 0;
           height: 0;
           border-top: 9px solid var(--background);
-          border-bottom: 9px solid var(--background);
+          border-bottom: 9.5px solid var(--background);
           border-inline-start: 9px solid var(--green);
           margin-inline-start: 4px;
         }

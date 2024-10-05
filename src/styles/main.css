@@ -5,6 +5,7 @@
   --black: #262626;
   --yellow: #fdbc4b;
   --blue: #5fd7ff;
+  --divider: #707070;
 }
 
 html,
@@ -28,5 +29,9 @@ a {
 hr {
   height: 1px;
   border: 0;
-  background: #707070;
+  background: var(--divider);
+}
+
+.indent-after-prompt {
+  margin-inline-start: 28px;
 }

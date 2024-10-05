@@ -16,9 +16,7 @@
         <img src="close.svg" alt="close" />
       </div>
     </div>
-    <div class="content">
-      <slot />
-    </div>
+    <slot />
   </main>
 </div>
 
@@ -47,25 +45,29 @@
     display: none;
   }
 
-  @media (min-width: 961px) {
+  @media (min-width: 769px) {
     .main-wrapper {
       padding-block: 16px;
     }
 
     .main {
-      width: 960px;
+      width: 768px;
       position: relative;
       background: var(--background);
       margin-inline: auto;
       box-shadow: 0px 2px 30px #202020;
       border-radius: 6px;
-      overflow: hidden;
 
       .titlebar {
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        left: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
         background: #31363a;
+        width: 100%;
         height: 28px;
         padding-inline: 5px;
 
@@ -84,14 +86,9 @@
         }
       }
 
-      .content {
-        height: 100%;
-        overflow-y: auto;
-
-        &::-webkit-scrollbar {
-          display: none;
-          scrollbar-width: none;
-        }
+      &::-webkit-scrollbar {
+        display: none;
+        scrollbar-width: none;
       }
     }
 
