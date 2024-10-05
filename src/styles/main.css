@@ -7,6 +7,7 @@
   --blue: #5fd7ff;
 }
 
+html,
 body {
   height: 100%;
   font-family: 'JetBrains Mono', monospace;
@@ -14,7 +15,6 @@ body {
   font-style: normal;
   letter-spacing: -0.05em;
   color: var(--foreground);
-  background: var(--background);
 
   @media (max-width: 480px) {
     font-size: 14px;

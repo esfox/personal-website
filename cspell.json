@@ -1,7 +1,17 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["ckftm", "charles", "sabarillo", "nuxt", "astro", "supabase", "mypic", "fontawesome"],
+  "words": [
+    "ckftm",
+    "charles",
+    "sabarillo",
+    "nuxt",
+    "astro",
+    "supabase",
+    "mypic",
+    "fontawesome",
+    "alacritty"
+  ],
   "ignorePaths": [
     "./cspell.json",
     "./node_modules",

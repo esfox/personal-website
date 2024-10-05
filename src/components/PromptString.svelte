@@ -13,7 +13,6 @@
 <style lang="scss">
   .prompt-string {
     font-size: 13px;
-    margin-top: 18px;
 
     .left-curve {
       color: var(--yellow);

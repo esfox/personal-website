@@ -6,8 +6,6 @@
   const now = new Date();
   const industryStartDate = new Date(2019, 0);
   const industryYearsCount = differenceInYears(now, industryStartDate);
-
-  const langIconSize = 36;
 </script>
 
 <svelte:head>
@@ -37,47 +35,47 @@
   </div>
 </div>
 <PromptString />
-<p class="indented" style="margin-top: -16px">
+<p class="intro indented">
   I love coding and have been doing it as a hobby since high school. It is also my career and I have
   been in the software industry for {industryYearsCount}+ years. I have worked on projects in
-  industries like the Real Estate, Insurance, Education, and Cinema industries, and have been part
-  of teams that develop websites, web applications and web-based platforms and systems.
+  industries like Real Estate, Insurance, Education, and Cinema, being part of teams that develop
+  websites, web applications and web-based platforms and systems.
   <a href="/about"> Click here to read a bit more about me! </a>
 </p>
 <PromptString />
-<div class="indented" style="margin-top: -16px;">
+<div class="langs indented" style="margin-top: -16px;">
   <h3>What I Code In</h3>
   <small>(And my experience level for each)</small>
-  <div class="langs" style={`--icon-size: ${langIconSize}px`}>
+  <div class="list">
     <SkillWithLevel skill="TypeScript" level={10}>
-      <img slot="icon" src="typescript.svg" alt="TypeScript" width={langIconSize} />
+      <img slot="icon" src="typescript.svg" alt="TypeScript" />
     </SkillWithLevel>
     <SkillWithLevel skill="JavaScript" level={10}>
-      <img slot="icon" src="javascript.svg" alt="JavaScript" width={langIconSize} />
+      <img slot="icon" src="javascript.svg" alt="JavaScript" />
     </SkillWithLevel>
     <SkillWithLevel skill="HTML" level={10}>
-      <img slot="icon" src="html.svg" alt="HTML" width={langIconSize} />
+      <img slot="icon" src="html.svg" alt="HTML" />
     </SkillWithLevel>
     <SkillWithLevel skill="CSS" level={9}>
-      <img slot="icon" src="css.svg" alt="CSS" width={langIconSize} />
+      <img slot="icon" src="css.svg" alt="CSS" />
     </SkillWithLevel>
     <SkillWithLevel skill="C#" level={7}>
-      <img slot="icon" src="csharp.svg" alt="C#" width={langIconSize} />
+      <img slot="icon" src="csharp.svg" alt="C#" />
     </SkillWithLevel>
     <SkillWithLevel skill="PHP" level={6}>
-      <img slot="icon" src="php.svg" alt="PHP" width={langIconSize} />
+      <img slot="icon" src="php.svg" alt="PHP" />
     </SkillWithLevel>
     <SkillWithLevel skill="Python" level={3}>
-      <img slot="icon" src="python.svg" alt="Python" width={langIconSize} />
+      <img slot="icon" src="python.svg" alt="Python" />
     </SkillWithLevel>
     <SkillWithLevel skill="Java" level={5}>
-      <img slot="icon" src="java.svg" alt="Java" width={langIconSize} />
+      <img slot="icon" src="java.svg" alt="Java" />
     </SkillWithLevel>
     <SkillWithLevel skill="Lua" level={4}>
-      <img slot="icon" src="lua.svg" alt="Lua" width={langIconSize} />
+      <img slot="icon" src="lua.svg" alt="Lua" />
     </SkillWithLevel>
     <SkillWithLevel skill="SQL" level={7}>
-      <i slot="icon" class="fa fa-database" style="font-size: var(--icon-size);"></i>
+      <i slot="icon" class="fa fa-database"></i>
     </SkillWithLevel>
   </div>
 </div>
@@ -92,20 +90,11 @@
     grid-template-rows: auto;
     grid-template-columns: auto 1fr;
     margin-top: -22px;
+    padding-bottom: 22px;
 
     .pic-and-links {
       display: flex;
       justify-content: end;
-    }
-
-    @media (max-width: 768px) {
-      grid-template-columns: auto;
-      grid-template-rows: auto auto;
-      gap: 24px;
-
-      .pic-and-links {
-        justify-content: center;
-      }
     }
 
     .mypic {
@@ -126,9 +115,35 @@
     }
   }
 
+  .intro {
+    margin-top: -16px;
+    padding-bottom: 22px;
+    padding-inline-end: 42px;
+  }
+
   .langs {
-    display: grid;
-    gap: 10px;
-    margin-top: 24px;
+    padding-bottom: 22px;
+
+    .list {
+      display: grid;
+      margin-top: 18px;
+      gap: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      gap: 24px;
+
+      .pic-and-links {
+        justify-content: center;
+      }
+    }
+
+    .langs .list {
+      gap: 10px;
+    }
   }
 </style>
