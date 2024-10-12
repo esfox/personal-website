@@ -12,11 +12,11 @@
           <p>AWS</p>
         </a>
         <a class="tech" href="https://vercel.com/" target="_blank">
-          <img src="vercel.svg" alt="Vercel" style="width: 42px;" />
+          <img src="vercel.svg" alt="Vercel" style="width: 28px;" />
           <p>Vercel</p>
         </a>
         <a class="tech" href="https://supabase.com/" target="_blank">
-          <img src="supabase.svg" alt="Supabase" style="width: 42px;" />
+          <img src="supabase.svg" alt="Supabase" style="width: 32px;" />
           <p>Supabase</p>
         </a>
       </div>
@@ -48,7 +48,7 @@
           <p>SST</p>
         </a>
         <a class="tech" href="https://www.serverless.com" target="_blank" style="width: 80px;">
-          <img src="serverless.svg" alt="Serverless" style="width: 48px;" />
+          <img src="serverless.svg" alt="Serverless" />
           <p>Serverless</p>
         </a>
       </div>
@@ -169,11 +169,11 @@
     gap: 16px 24px;
 
     .tech {
-      width: 64px;
+      width: 48px;
 
       img {
-        width: 56px;
-        height: 56px;
+        width: 36px;
+        height: 36px;
         object-fit: contain;
       }
     }
