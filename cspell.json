@@ -11,7 +11,10 @@
     "mypic",
     "fontawesome",
     "alacritty",
-    "esfox"
+    "esfox",
+    "splide",
+    "splidejs",
+    "taxculator"
   ],
   "ignorePaths": [
     "./cspell.json",

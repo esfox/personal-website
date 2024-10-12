@@ -2,6 +2,7 @@
   import PromptString from '../components/PromptString.svelte';
   import Hero from '../components/Hero.svelte';
   import Intro from '../components/Intro.svelte';
+  import Works from '../components/Works.svelte';
   import Languages from '../components/Languages.svelte';
   import Tech from '../components/Tech.svelte';
 </script>
@@ -14,6 +15,8 @@
 <Hero />
 <PromptString />
 <Intro />
+<PromptString />
+<Works />
 <PromptString />
 <Languages />
 <PromptString />
