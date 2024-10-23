@@ -3,6 +3,7 @@
   import '@splidejs/svelte-splide/css';
 
   export let images: { link: string; alt: string }[] = [];
+  export let intervalMs = 3000;
 
   let splideInstance: Splide;
 
@@ -25,11 +26,11 @@
   bind:this={splideInstance}
   class="slides"
   options={{
-    width: 300,
     pagination: false,
     type: 'loop',
     autoplay: true,
-    interval: 3000,
+    interval: intervalMs,
+    lazyLoad: true,
     arrows: false,
     pauseOnHover: false,
     pauseOnFocus: false,
