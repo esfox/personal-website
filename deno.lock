@@ -3,7 +3,6 @@
   "specifiers": {
     "npm:@fortawesome/fontawesome-free@^6.6.0": "6.6.0",
     "npm:@splidejs/svelte-splide@~0.2.9": "0.2.9",
-    "npm:@sveltejs/adapter-static@^3.0.5": "3.0.5_@sveltejs+kit@2.6.1__@sveltejs+vite-plugin-svelte@3.1.2___svelte@4.2.19___vite@5.4.8__svelte@4.2.19__vite@5.4.8_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.19__vite@5.4.8_svelte@4.2.19_vite@5.4.8_sass@1.79.4",
     "npm:@sveltejs/kit@^2.5.27": "2.6.1_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.19__vite@5.4.8_svelte@4.2.19_vite@5.4.8",
     "npm:@sveltejs/vite-plugin-svelte@^3.1.2": "3.1.2_svelte@4.2.19_vite@5.4.8",
     "npm:@typescript-eslint/eslint-plugin@^8.5.0": "8.7.0_@typescript-eslint+parser@8.7.0__eslint@8.57.1__typescript@5.6.2_eslint@8.57.1_typescript@5.6.2",
@@ -509,16 +508,10 @@
         "@splidejs/splide"
       ]
     },
-    "@sveltejs/adapter-static@3.0.5_@sveltejs+kit@2.6.1__@sveltejs+vite-plugin-svelte@3.1.2___svelte@4.2.19___vite@5.4.8__svelte@4.2.19__vite@5.4.8_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.19__vite@5.4.8_svelte@4.2.19_vite@5.4.8_sass@1.79.4": {
-      "integrity": "sha512-kFJR7RxeB6FBvrKZWAEzIALatgy11ISaaZbcPup8JdWUdrmmfUHHTJ738YHJTEfnCiiXi6aX8Q6ePY7tnSMD6Q==",
-      "dependencies": [
-        "@sveltejs/kit@2.6.1_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.19__vite@5.4.8_svelte@4.2.19_vite@5.4.8_vite@5.4.8__sass@1.79.4_sass@1.79.4"
-      ]
-    },
     "@sveltejs/kit@2.6.1_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.19__vite@5.4.8_svelte@4.2.19_vite@5.4.8": {
       "integrity": "sha512-QFlch3GPGZYidYhdRAub0fONw8UTguPICFHUSPxNkA/jdlU1p6C6yqq19J1QWdxIHS2El/ycDCGrHb3EAiMNqg==",
       "dependencies": [
-        "@sveltejs/vite-plugin-svelte@3.1.2_svelte@4.2.19_vite@5.4.8",
+        "@sveltejs/vite-plugin-svelte",
         "@types/cookie",
         "cookie",
         "devalue",
@@ -532,73 +525,30 @@
         "sirv",
         "svelte",
         "tiny-glob",
-        "vite@5.4.8"
-      ]
-    },
-    "@sveltejs/kit@2.6.1_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.19__vite@5.4.8_svelte@4.2.19_vite@5.4.8_vite@5.4.8__sass@1.79.4_sass@1.79.4": {
-      "integrity": "sha512-QFlch3GPGZYidYhdRAub0fONw8UTguPICFHUSPxNkA/jdlU1p6C6yqq19J1QWdxIHS2El/ycDCGrHb3EAiMNqg==",
-      "dependencies": [
-        "@sveltejs/vite-plugin-svelte@3.1.2_svelte@4.2.19_vite@5.4.8_vite@5.4.8__sass@1.79.4_sass@1.79.4",
-        "@types/cookie",
-        "cookie",
-        "devalue",
-        "esm-env",
-        "import-meta-resolve",
-        "kleur",
-        "magic-string",
-        "mrmime",
-        "sade",
-        "set-cookie-parser",
-        "sirv",
-        "svelte",
-        "tiny-glob",
-        "vite@5.4.8_sass@1.79.4"
+        "vite"
       ]
     },
     "@sveltejs/vite-plugin-svelte-inspector@2.1.0_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.19__vite@5.4.8_svelte@4.2.19_vite@5.4.8": {
       "integrity": "sha512-9QX28IymvBlSCqsCll5t0kQVxipsfhFFL+L2t3nTWfXnddYwxBuAEtTtlaVQpRz9c37BhJjltSeY4AJSC03SSg==",
       "dependencies": [
-        "@sveltejs/vite-plugin-svelte@3.1.2_svelte@4.2.19_vite@5.4.8",
+        "@sveltejs/vite-plugin-svelte",
         "debug",
         "svelte",
-        "vite@5.4.8"
-      ]
-    },
-    "@sveltejs/vite-plugin-svelte-inspector@2.1.0_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.19__vite@5.4.8_svelte@4.2.19_vite@5.4.8_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.19__vite@5.4.8__vite@5.4.8___sass@1.79.4__sass@1.79.4_vite@5.4.8__sass@1.79.4_sass@1.79.4": {
-      "integrity": "sha512-9QX28IymvBlSCqsCll5t0kQVxipsfhFFL+L2t3nTWfXnddYwxBuAEtTtlaVQpRz9c37BhJjltSeY4AJSC03SSg==",
-      "dependencies": [
-        "@sveltejs/vite-plugin-svelte@3.1.2_svelte@4.2.19_vite@5.4.8_vite@5.4.8__sass@1.79.4_sass@1.79.4",
-        "debug",
-        "svelte",
-        "vite@5.4.8_sass@1.79.4"
+        "vite"
       ]
     },
     "@sveltejs/vite-plugin-svelte@3.1.2_svelte@4.2.19_vite@5.4.8": {
       "integrity": "sha512-Txsm1tJvtiYeLUVRNqxZGKR/mI+CzuIQuc2gn+YCs9rMTowpNZ2Nqt53JdL8KF9bLhAf2ruR/dr9eZCwdTriRA==",
       "dependencies": [
-        "@sveltejs/vite-plugin-svelte-inspector@2.1.0_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.19__vite@5.4.8_svelte@4.2.19_vite@5.4.8",
+        "@sveltejs/vite-plugin-svelte-inspector",
         "debug",
         "deepmerge",
         "kleur",
         "magic-string",
         "svelte",
         "svelte-hmr",
-        "vite@5.4.8",
-        "vitefu@0.2.5_vite@5.4.8"
-      ]
-    },
-    "@sveltejs/vite-plugin-svelte@3.1.2_svelte@4.2.19_vite@5.4.8_vite@5.4.8__sass@1.79.4_sass@1.79.4": {
-      "integrity": "sha512-Txsm1tJvtiYeLUVRNqxZGKR/mI+CzuIQuc2gn+YCs9rMTowpNZ2Nqt53JdL8KF9bLhAf2ruR/dr9eZCwdTriRA==",
-      "dependencies": [
-        "@sveltejs/vite-plugin-svelte-inspector@2.1.0_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.19__vite@5.4.8_svelte@4.2.19_vite@5.4.8_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.19__vite@5.4.8__vite@5.4.8___sass@1.79.4__sass@1.79.4_vite@5.4.8__sass@1.79.4_sass@1.79.4",
-        "debug",
-        "deepmerge",
-        "kleur",
-        "magic-string",
-        "svelte",
-        "svelte-hmr",
-        "vite@5.4.8_sass@1.79.4",
-        "vitefu@0.2.5_vite@5.4.8_vite@5.4.8__sass@1.79.4_sass@1.79.4"
+        "vite",
+        "vitefu"
       ]
     },
     "@types/cookie@0.6.0": {
@@ -2098,26 +2048,10 @@
         "rollup"
       ]
     },
-    "vite@5.4.8_sass@1.79.4": {
-      "integrity": "sha512-FqrItQ4DT1NC4zCUqMB4c4AZORMKIa0m8/URVCZ77OZ/QSNeJ54bU1vrFADbDsuwfIPcgknRkmqakQcgnL4GiQ==",
-      "dependencies": [
-        "esbuild",
-        "fsevents",
-        "postcss",
-        "rollup",
-        "sass"
-      ]
-    },
     "vitefu@0.2.5_vite@5.4.8": {
       "integrity": "sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q==",
       "dependencies": [
-        "vite@5.4.8"
-      ]
-    },
-    "vitefu@0.2.5_vite@5.4.8_vite@5.4.8__sass@1.79.4_sass@1.79.4": {
-      "integrity": "sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q==",
-      "dependencies": [
-        "vite@5.4.8_sass@1.79.4"
+        "vite"
       ]
     },
     "vscode-languageserver-textdocument@1.0.12": {
@@ -2164,7 +2098,7 @@
       "dependencies": [
         "npm:@fortawesome/fontawesome-free@^6.6.0",
         "npm:@splidejs/svelte-splide@~0.2.9",
-        "npm:@sveltejs/adapter-static@^3.0.5",
+        "npm:@sveltejs/adapter-auto@^1.0.0-next.91",
         "npm:@sveltejs/kit@^2.5.27",
         "npm:@sveltejs/vite-plugin-svelte@^3.1.2",
         "npm:@typescript-eslint/eslint-plugin@^8.5.0",
