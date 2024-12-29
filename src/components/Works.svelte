@@ -17,17 +17,17 @@
         <WorkSlides
           images={[
             {
-              link: 'azimuth_admin.png',
-              alt: 'Azimuth Admin Screenshot'
+              src: 'azimuth_admin.png',
+              alt: 'Azimuth Admin Screenshot',
             },
             {
-              link: 'azimuth_orders.png',
-              alt: 'Azimuth Orders Screenshot'
+              src: 'azimuth_orders.png',
+              alt: 'Azimuth Orders Screenshot',
             },
             {
-              link: 'azimuth_order_form.png',
-              alt: 'Azimuth Order Form Screenshot'
-            }
+              src: 'azimuth_order_form.png',
+              alt: 'Azimuth Order Form Screenshot',
+            },
           ]}
         />
       </div>
@@ -40,13 +40,13 @@
         <WorkSlides
           images={[
             {
-              link: 'taxculator_main.png',
-              alt: 'Taxculator Main Page Screenshot'
+              src: 'taxculator_main.png',
+              alt: 'Taxculator Main Page Screenshot',
             },
             {
-              link: 'taxculator_salaries.png',
-              alt: 'Taxculator Salaries Page Screenshot'
-            }
+              src: 'taxculator_salaries.png',
+              alt: 'Taxculator Salaries Page Screenshot',
+            },
           ]}
         />
       </div>

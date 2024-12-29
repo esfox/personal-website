@@ -32,6 +32,10 @@ hr {
   background: var(--divider);
 }
 
+button {
+  cursor: pointer;
+}
+
 .indent-after-prompt {
   margin-inline-start: 28px;
 }

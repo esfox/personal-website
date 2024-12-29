@@ -14,7 +14,8 @@
     "esfox",
     "splide",
     "splidejs",
-    "taxculator"
+    "taxculator",
+    "panzoom"
   ],
   "ignorePaths": [
     "./cspell.json",

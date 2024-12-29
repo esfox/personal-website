@@ -48,7 +48,7 @@
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 560px) {
     .skill-with-level {
       grid-template-columns: 120px 1fr;
       // grid-template-rows: auto auto;
